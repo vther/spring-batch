@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch10.retry.template;
 
 import org.springframework.retry.RetryCallback;
@@ -8,7 +6,7 @@ import org.springframework.retry.RetryContext;
 import org.springframework.retry.RetryListener;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-22下午02:06:57
  */
 public class CountRetryListener implements RetryListener {

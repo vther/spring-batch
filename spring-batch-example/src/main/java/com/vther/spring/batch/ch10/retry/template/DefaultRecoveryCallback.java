@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch10.retry.template;
 
 import org.junit.Assert;
@@ -8,8 +6,8 @@ import org.springframework.retry.RecoveryCallback;
 import org.springframework.retry.RetryContext;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-10-21下午11:00:17
  * @param <T>
  */

@@ -1,14 +1,12 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch05.step.listener;
 
-import java.util.List;
+package com.vther.spring.batch.ch05.step.listener;
 
 import org.springframework.batch.core.ItemWriteListener;
 
+import java.util.List;
+
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2012-9-1上午08:11:52
  */
 public class SystemOutItemWriteListener implements ItemWriteListener<String> {

@@ -1,13 +1,11 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch05.step.listener;
 
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.JobExecutionListener;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2012-9-1上午08:24:11
  */
 public class SystemOutJobExecutionListener implements JobExecutionListener {

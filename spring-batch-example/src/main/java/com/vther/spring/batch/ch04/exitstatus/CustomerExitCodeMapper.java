@@ -4,7 +4,7 @@ import org.springframework.batch.core.ExitStatus;
 import org.springframework.batch.core.launch.support.ExitCodeMapper;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  *         2013-3-18下午10:14:50
  */
 public class CustomerExitCodeMapper implements ExitCodeMapper {

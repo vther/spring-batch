@@ -1,21 +1,19 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch07.reuse;
+
+import com.vther.spring.batch.ch07.CreditBill;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.vther.spring.batch.ch07.CreditBill;
-
 
 /**
  * 模拟存在的服务.<br>
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-29上午10:30:23
  */
 public class ExistService {
-	List<CreditBill> billList = new ArrayList<CreditBill>();
+	List<CreditBill> billList = new ArrayList<>();
 	
 	public void insert(CreditBill creditBill){
 		billList.add(creditBill);

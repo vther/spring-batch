@@ -1,18 +1,17 @@
 package com.vther.spring.batch.ch11.partition.db;
 
-import java.text.MessageFormat;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.sql.DataSource;
-
 import org.springframework.batch.core.partition.support.Partitioner;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import javax.sql.DataSource;
+import java.text.MessageFormat;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2014-1-11下午03:13:45
  */
 public class DBpartition implements Partitioner {
@@ -24,6 +23,15 @@ public class DBpartition implements Partitioner {
 	private DataSource dataSource;
 	private String table ;
 	private String column;
+
+	public static boolean isEmpty(String info) {
+		if (info != null) {
+			if (info.trim().length() > 1) {
+				return false;
+			}
+		}
+		return true;
+	}
 	
 	public Map<String, ExecutionContext> partition(int gridSize) {
 		validateAndInit();
@@ -34,7 +42,7 @@ public class DBpartition implements Partitioner {
 		int number=0;
 		int start =min;
 		int end = start+targetSize-1;
-		
+
 		while(start <= max){
 			ExecutionContext context = new ExecutionContext();
 			if(end>=max){
@@ -48,7 +56,7 @@ public class DBpartition implements Partitioner {
 		}
 		return resultMap;
 	}
-	
+
 	public void validateAndInit(){
 		if(isEmpty(table)){
 			throw new IllegalArgumentException("table cannot be null");
@@ -62,15 +70,6 @@ public class DBpartition implements Partitioner {
 		if(jdbcTemplate==null){
 			throw new IllegalArgumentException("jdbcTemplate cannot be null");
 		}
-	}
-
-	public static boolean isEmpty(String info){
-		if(info!=null){
-			if(info.trim().length()>1){
-				return false;
-			}
-		}
-		return true;
 	}
 	
 	public String getColumn() {

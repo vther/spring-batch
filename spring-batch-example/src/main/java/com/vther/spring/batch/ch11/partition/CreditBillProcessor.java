@@ -1,13 +1,11 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch11.partition;
 
 import org.springframework.batch.item.ItemProcessor;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2014-1-11下午02:38:01
  */
 public class CreditBillProcessor implements

@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package test.com.juxtapose.example.ch03;
 
 import org.springframework.batch.core.Job;
@@ -11,8 +9,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-2-28下午08:34:48
  */
 public class JobLaunch {
@@ -35,9 +33,7 @@ public class JobLaunch {
 		}
 	}
 
-	/**
-	 * @param args
-	 */
+
 	public static void main(String[] args) {
 		executeJob("ch03/job/job.xml", "billJob",
 				new JobParametersBuilder().addString("date", "20130311"));

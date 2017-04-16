@@ -1,17 +1,15 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch04.scheduler;
 
-import java.util.Date;
+package com.vther.spring.batch.ch04.scheduler;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameters;
 import org.springframework.batch.core.JobParametersBuilder;
 import org.springframework.batch.core.launch.JobLauncher;
 
+import java.util.Date;
+
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-3-19下午03:53:39
  */
 public class SchedulerLauncher {

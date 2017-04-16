@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch10.retry.template;
 
 import org.springframework.retry.RecoveryCallback;
@@ -12,8 +10,8 @@ import org.springframework.retry.policy.TimeoutRetryPolicy;
 import org.springframework.retry.support.RetryTemplate;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-10-21下午11:00:35
  */
 public class RetryTemplateExample {

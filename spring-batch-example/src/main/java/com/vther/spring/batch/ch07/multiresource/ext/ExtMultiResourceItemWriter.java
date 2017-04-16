@@ -1,11 +1,5 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch07.multiresource.ext;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
+package com.vther.spring.batch.ch07.multiresource.ext;
 
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemStreamException;
@@ -19,8 +13,12 @@ import org.springframework.core.io.Resource;
 import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-21下午05:50:51
  */
 public class ExtMultiResourceItemWriter<T> extends AbstractItemStreamItemWriter<T> {

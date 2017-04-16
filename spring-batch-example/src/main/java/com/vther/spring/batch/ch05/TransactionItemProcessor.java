@@ -1,12 +1,10 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch05;
 
 import org.springframework.batch.item.ItemProcessor;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-3-25下午11:59:14
  */
 public class TransactionItemProcessor implements ItemProcessor<String, String> {

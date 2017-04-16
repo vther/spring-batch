@@ -1,9 +1,5 @@
-/**
- * 
- */
-package test.com.juxtapose.example.ch05;
 
-import java.util.Date;
+package test.com.juxtapose.example.ch05;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
@@ -12,9 +8,11 @@ import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Date;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-2-28下午08:34:48
  */
 public class JobLaunchRetry {
@@ -36,10 +34,8 @@ public class JobLaunchRetry {
 			e.printStackTrace();
 		}
 	}
-	
-	/**
-	 * @param args
-	 */
+
+
 	public static void main(String[] args) {
 		executeJob("ch05/job/job-step-retry.xml", "retryJob",
 				new JobParametersBuilder().addDate("date", new Date()));

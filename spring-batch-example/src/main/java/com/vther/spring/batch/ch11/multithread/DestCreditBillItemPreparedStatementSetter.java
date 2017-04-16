@@ -1,16 +1,14 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch11.multithread;
+
+import org.springframework.batch.item.database.ItemPreparedStatementSetter;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import org.springframework.batch.item.database.ItemPreparedStatementSetter;
-
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-11-17上午07:35:23
  */
 public class DestCreditBillItemPreparedStatementSetter implements

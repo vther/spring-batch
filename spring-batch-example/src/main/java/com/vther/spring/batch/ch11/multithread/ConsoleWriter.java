@@ -1,15 +1,13 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch11.multithread;
 
-import java.util.List;
+package com.vther.spring.batch.ch11.multithread;
 
 import org.springframework.batch.item.ItemWriter;
 
+import java.util.List;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-11-16下午10:58:20
  */
 public class ConsoleWriter implements ItemWriter<String> {

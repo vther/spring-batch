@@ -1,14 +1,11 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch08.listener;
 
+import com.vther.spring.batch.ch08.CreditBill;
 import org.springframework.batch.core.ItemProcessListener;
 
-import com.vther.spring.batch.ch08.CreditBill;
-
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-1上午12:04:10
  */
 public class ErrorItemProcessListener implements ItemProcessListener<CreditBill, CreditBill> {

@@ -1,20 +1,17 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch07.xml;
-
-import java.io.IOException;
-
-import javax.xml.stream.XMLEventFactory;
-import javax.xml.stream.XMLEventWriter;
-import javax.xml.stream.XMLStreamException;
 
 import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.listener.StepExecutionListenerSupport;
 import org.springframework.batch.item.xml.StaxWriterCallback;
 
+import javax.xml.stream.XMLEventFactory;
+import javax.xml.stream.XMLEventWriter;
+import javax.xml.stream.XMLStreamException;
+import java.io.IOException;
+
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-21下午03:47:23
  */
 public class FooterStaxWriterCallback extends StepExecutionListenerSupport

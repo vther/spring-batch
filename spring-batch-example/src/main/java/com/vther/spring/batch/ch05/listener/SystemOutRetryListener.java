@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch05.listener;
 
 import org.springframework.retry.RetryCallback;
@@ -8,7 +6,7 @@ import org.springframework.retry.RetryContext;
 import org.springframework.retry.RetryListener;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-3-24下午08:26:10
  */
 public class SystemOutRetryListener implements RetryListener {

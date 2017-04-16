@@ -1,16 +1,13 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch08.listener;
 
+import com.vther.spring.batch.ch08.CreditBill;
 import org.springframework.batch.core.annotation.AfterProcess;
 import org.springframework.batch.core.annotation.BeforeProcess;
 import org.springframework.batch.core.annotation.OnProcessError;
 
-import com.vther.spring.batch.ch08.CreditBill;
-
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-1上午12:01:33
  */
 public class SystemOutAnnotation {

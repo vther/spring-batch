@@ -1,18 +1,15 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch09.decider;
 
+import com.vther.spring.batch.ch09.Constant;
 import com.vther.spring.batch.ch09.CreditService;
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.job.flow.FlowExecutionStatus;
 import org.springframework.batch.core.job.flow.JobExecutionDecider;
 
-import com.vther.spring.batch.ch09.Constant;
-
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-7上午10:23:12
  */
 public class FileExistsDecider implements JobExecutionDecider {

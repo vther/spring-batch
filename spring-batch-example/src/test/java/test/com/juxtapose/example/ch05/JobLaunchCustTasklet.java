@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package test.com.juxtapose.example.ch05;
 
 import org.springframework.batch.core.Job;
@@ -13,8 +11,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.Date;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-2-28下午08:34:48
  */
 public class JobLaunchCustTasklet {
@@ -36,10 +34,8 @@ public class JobLaunchCustTasklet {
 			e.printStackTrace();
 		}
 	}
-	
-	/**
-	 * @param args
-	 */
+
+
 	public static void main(String[] args) {
 		executeJob("ch05/job/job-step-tasklet.xml", "custTaskletJob",
 				new JobParametersBuilder().addDate("date", new Date()));

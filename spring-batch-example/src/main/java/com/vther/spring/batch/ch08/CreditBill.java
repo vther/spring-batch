@@ -1,13 +1,11 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch08;
 
 import java.io.Serializable;
 
 /**
  * 信用卡对账单模型.<br>
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-19下午01:15:29
  */
 public class CreditBill implements Serializable{

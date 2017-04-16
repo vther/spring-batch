@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package test.com.juxtapose.example.ch04;
 
 import org.springframework.batch.core.Job;
@@ -14,7 +12,7 @@ import java.util.Date;
 import java.util.Set;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  *         2013-2-28下午08:34:48
  */
 public class JobLaunchStop {
@@ -44,7 +42,7 @@ public class JobLaunchStop {
     }
 
     /**
-     * @param args
+     *
      */
     public static void main(String[] args) {
         executeJobAndStop("ch04/job/job-stop.xml", "chunkBusinessJob",

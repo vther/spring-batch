@@ -1,10 +1,8 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch09;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-7下午02:03:46
  */
 public interface Constant {

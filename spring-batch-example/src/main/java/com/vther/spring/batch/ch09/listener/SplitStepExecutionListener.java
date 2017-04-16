@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch09.listener;
 
 import com.vther.spring.batch.ch09.Constant;
@@ -9,7 +7,7 @@ import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.StepExecutionListener;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-7下午02:45:42
  */
 public class SplitStepExecutionListener implements StepExecutionListener {

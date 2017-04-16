@@ -1,23 +1,20 @@
-/**
- * 
- */
+
 package test.com.juxtapose.example.ch07;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.vther.spring.batch.ch07.CreditBill;
+import com.vther.spring.batch.ch07.cust.itemwriter.CustomCreditBillItemWriter;
+import com.vther.spring.batch.ch07.cust.itemwriter.RestartableCustomCreditBillItemWriter;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemStream;
 
-import com.vther.spring.batch.ch07.CreditBill;
-import com.vther.spring.batch.ch07.cust.itemwriter.CustomCreditBillItemWriter;
-import com.vther.spring.batch.ch07.cust.itemwriter.RestartableCustomCreditBillItemWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-9-29下午12:36:33
  */
 public class JobLaunchCustomItemWriterTest {

@@ -1,15 +1,13 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch10.skip;
 
-import java.util.Random;
+package com.vther.spring.batch.ch10.skip;
 
 import org.springframework.batch.item.ItemProcessor;
 
+import java.util.Random;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-10-20下午10:06:48
  */
 public class RadomExceptionItemProcessor implements ItemProcessor<String, String> {

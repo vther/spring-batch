@@ -1,17 +1,14 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch06.flat;
 
-import java.util.Map;
-
+import com.vther.spring.batch.ch06.CreditBill;
 import org.springframework.batch.item.file.LineMapper;
 import org.springframework.batch.item.file.mapping.JsonLineMapper;
 
-import com.vther.spring.batch.ch06.CreditBill;
+import java.util.Map;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-4-3上午10:57:50
  */
 public class WrappedJsonLineMapper implements LineMapper<CreditBill> {

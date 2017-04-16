@@ -1,14 +1,11 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch06.jms;
 
+import com.vther.spring.batch.ch06.CreditBill;
 import org.springframework.batch.item.ItemProcessor;
 
-import com.vther.spring.batch.ch06.CreditBill;
-
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-3-25下午11:59:14
  */
 public class TransactionItemProcessor implements ItemProcessor<CreditBill, CreditBill> {

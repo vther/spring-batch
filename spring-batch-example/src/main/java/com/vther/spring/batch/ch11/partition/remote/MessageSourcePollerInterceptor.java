@@ -1,10 +1,5 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch11.partition.remote;
 
-import java.util.ArrayList;
-import java.util.Collection;
+package com.vther.spring.batch.ch11.partition.remote;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -17,8 +12,11 @@ import org.springframework.integration.core.MessageSource;
 import org.springframework.integration.support.MessageBuilder;
 import org.springframework.util.Assert;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2014-3-23下午03:36:20
  */
 public class MessageSourcePollerInterceptor extends ChannelInterceptorAdapter implements InitializingBean{

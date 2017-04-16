@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package test.com.juxtapose.example.ch04;
 
 import com.vther.spring.batch.ch04.stop.StopStepListener;
@@ -13,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.Date;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  *         2013-3-20下午10:35:56
  */
 public class JobLaunchStopBusiness {
@@ -44,7 +42,7 @@ public class JobLaunchStopBusiness {
     }
 
     /**
-     * @param args
+     *
      */
     public static void main(String[] args) {
         executeJobAndStop("ch04/job/job-stop.xml", "chunkBusinessJob",

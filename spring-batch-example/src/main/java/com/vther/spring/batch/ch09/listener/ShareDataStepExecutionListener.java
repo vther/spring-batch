@@ -1,16 +1,13 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch09.listener;
 
+import com.vther.spring.batch.ch09.Constant;
 import org.springframework.batch.core.ExitStatus;
 import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.StepExecutionListener;
 
-import com.vther.spring.batch.ch09.Constant;
-
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-7下午12:13:23
  */
 public class ShareDataStepExecutionListener implements StepExecutionListener {

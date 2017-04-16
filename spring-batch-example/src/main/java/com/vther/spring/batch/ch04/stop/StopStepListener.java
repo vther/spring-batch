@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package com.vther.spring.batch.ch04.stop;
 
 import org.springframework.batch.core.ExitStatus;
@@ -9,7 +7,7 @@ import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.StepExecutionListener;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  *         2013-3-20下午10:19:47
  */
 public class StopStepListener<T> implements StepExecutionListener, ItemReadListener<T> {

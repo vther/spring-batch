@@ -1,17 +1,15 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch07.mail;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
+package com.vther.spring.batch.ch07.mail;
 
 import com.vther.spring.batch.ch07.CreditBill;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.mail.SimpleMailMessage;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-29下午08:15:18
  */
 public class MailItemProcessor implements ItemProcessor<CreditBill, SimpleMailMessage> {

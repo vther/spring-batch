@@ -1,13 +1,11 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch11.multithread;
 
 import java.io.Serializable;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-11-17上午07:36:14
  */
 public class CreditBill implements Serializable{

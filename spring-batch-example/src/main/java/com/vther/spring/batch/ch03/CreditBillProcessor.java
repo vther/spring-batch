@@ -1,12 +1,10 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch03;
 
 import org.springframework.batch.item.ItemProcessor;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-1-6下午09:55:38
  */
 public class CreditBillProcessor implements

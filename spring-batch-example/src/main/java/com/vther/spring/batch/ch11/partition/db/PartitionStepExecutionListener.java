@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch11.partition.db;
 
 import org.springframework.batch.core.ExitStatus;
@@ -9,8 +7,8 @@ import org.springframework.batch.core.StepExecutionListener;
 
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2014-3-22上午10:11:29
  */
 public class PartitionStepExecutionListener implements StepExecutionListener {

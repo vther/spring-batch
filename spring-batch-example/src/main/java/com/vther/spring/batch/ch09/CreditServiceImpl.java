@@ -1,17 +1,15 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch09;
 
-import java.io.IOException;
+package com.vther.spring.batch.ch09;
 
 import org.apache.commons.io.FileUtils;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 
+import java.io.IOException;
+
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-7上午10:27:37
  */
 public class CreditServiceImpl implements CreditService {

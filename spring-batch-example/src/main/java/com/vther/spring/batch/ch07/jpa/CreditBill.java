@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch07.jpa;
 
 import javax.persistence.Column;
@@ -10,7 +8,7 @@ import javax.persistence.Table;
 
 /**
  * 信用卡对账单模型.<br>
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-1上午08:57:23
  */
 @Entity()

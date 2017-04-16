@@ -1,14 +1,11 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch08.listener;
 
+import com.vther.spring.batch.ch08.CreditBill;
 import org.springframework.batch.core.ItemProcessListener;
 
-import com.vther.spring.batch.ch08.CreditBill;
-
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-30下午11:59:52
  */
 public class SystemOutItemProcessListener implements ItemProcessListener<CreditBill, CreditBill> {

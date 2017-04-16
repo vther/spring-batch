@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package com.vther.spring.batch.ch05;
 
 import org.springframework.batch.item.ItemProcessor;
@@ -8,7 +6,7 @@ import org.springframework.batch.item.ItemProcessor;
 import java.util.Random;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  *         2013-3-22下午04:50:05
  */
 public class RadomExceptionItemProcessor implements ItemProcessor<String, String> {

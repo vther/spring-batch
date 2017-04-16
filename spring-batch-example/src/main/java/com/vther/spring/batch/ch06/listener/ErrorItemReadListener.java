@@ -1,14 +1,11 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch06.listener;
 
+import com.vther.spring.batch.ch06.CreditBill;
 import org.springframework.batch.core.ItemReadListener;
 
-import com.vther.spring.batch.ch06.CreditBill;
-
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-16下午06:22:13
  */
 public class ErrorItemReadListener implements ItemReadListener<CreditBill> {

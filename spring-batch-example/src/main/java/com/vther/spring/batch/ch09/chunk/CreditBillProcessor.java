@@ -1,13 +1,11 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch09.chunk;
 
 import org.springframework.batch.item.ItemProcessor;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-9-19下午01:15:37
  */
 public class CreditBillProcessor implements

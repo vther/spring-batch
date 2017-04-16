@@ -1,15 +1,7 @@
-/**
- * 
- */
+
 package test.com.juxtapose.example.ch06;
 
-import java.util.Date;
-
-import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.ObjectMessage;
-import javax.jms.Session;
-
+import com.vther.spring.batch.ch06.CreditBill;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.JobParametersBuilder;
@@ -19,11 +11,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 
-import com.vther.spring.batch.ch06.CreditBill;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.ObjectMessage;
+import javax.jms.Session;
+import java.util.Date;
 
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-1-6下午09:18:11
  */
 public class JobLaunchJMSTransaction {
@@ -79,12 +75,10 @@ public class JobLaunchJMSTransaction {
 			e.printStackTrace();
 		}
 	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		final ApplicationContext context = getContext("ch06/job/job-jms-transaction.xml");
+
+
+    public static void main(String[] args) {
+        final ApplicationContext context = getContext("ch06/job/job-jms-transaction.xml");
 		Thread thread = new Thread(new Runnable(){
 			@Override
 			public void run() {

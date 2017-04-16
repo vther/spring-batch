@@ -1,19 +1,16 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch11.partition.db;
+
+import com.vther.spring.batch.ch11.partition.CreditBill;
+import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import org.springframework.jdbc.core.RowMapper;
-
-import com.vther.spring.batch.ch11.partition.CreditBill;
-
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2014-1-11下午03:10:28
  */
 public class CreditBillRowMapper implements RowMapper<CreditBill> {

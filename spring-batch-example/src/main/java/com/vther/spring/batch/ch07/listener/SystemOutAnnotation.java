@@ -1,19 +1,17 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch07.listener;
 
-import java.util.List;
+package com.vther.spring.batch.ch07.listener;
 
 import com.vther.spring.batch.ch07.CreditBill;
 import org.springframework.batch.core.annotation.AfterWrite;
 import org.springframework.batch.core.annotation.BeforeWrite;
 import org.springframework.batch.core.annotation.OnWriteError;
 
+import java.util.List;
+
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-9-29下午01:48:24
  */
 public class SystemOutAnnotation {

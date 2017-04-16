@@ -1,15 +1,13 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch07.flat;
+
+import org.springframework.batch.item.file.FlatFileHeaderCallback;
 
 import java.io.IOException;
 import java.io.Writer;
 
-import org.springframework.batch.item.file.FlatFileHeaderCallback;
-
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-20上午09:11:41
  */
 public class DefaultFlatFileHeaderCallback implements FlatFileHeaderCallback {

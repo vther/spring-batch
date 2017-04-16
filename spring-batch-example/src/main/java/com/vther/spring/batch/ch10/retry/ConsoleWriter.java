@@ -1,15 +1,13 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch10.retry;
 
-import java.util.List;
+package com.vther.spring.batch.ch10.retry;
 
 import org.springframework.batch.item.ItemWriter;
 
+import java.util.List;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-10-21下午10:11:53
  */
 public class ConsoleWriter implements ItemWriter<String> {

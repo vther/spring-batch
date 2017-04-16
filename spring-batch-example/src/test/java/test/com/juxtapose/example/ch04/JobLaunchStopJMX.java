@@ -1,9 +1,5 @@
-/**
- * 
- */
-package test.com.juxtapose.example.ch04;
 
-import java.util.Date;
+package test.com.juxtapose.example.ch04;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
@@ -12,9 +8,11 @@ import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Date;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-2-28下午08:34:48
  */
 public class JobLaunchStopJMX {
@@ -36,12 +34,10 @@ public class JobLaunchStopJMX {
 			e.printStackTrace();
 		}
 	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		executeJob("ch04/job/job-stop.xml", "chunkJob",
+
+
+    public static void main(String[] args) {
+        executeJob("ch04/job/job-stop.xml", "chunkJob",
 				new JobParametersBuilder().addDate("date", new Date()));
 	}
 }

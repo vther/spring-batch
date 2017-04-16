@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch05.listener;
 
 import org.springframework.batch.core.ExitStatus;
@@ -8,7 +6,7 @@ import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.StepExecutionListener;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-3-21下午10:52:28
  */
 public class SystemOutStepExecutionListener implements StepExecutionListener {

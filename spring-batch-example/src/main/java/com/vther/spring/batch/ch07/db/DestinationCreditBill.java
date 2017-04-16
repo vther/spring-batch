@@ -1,12 +1,10 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch07.db;
 
 import java.io.Serializable;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-23下午03:28:16
  */
 public class DestinationCreditBill implements Serializable{

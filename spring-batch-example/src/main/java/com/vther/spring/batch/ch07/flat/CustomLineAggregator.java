@@ -1,18 +1,16 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch07.flat;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+package com.vther.spring.batch.ch07.flat;
 
 import org.springframework.batch.item.file.transform.ExtractorLineAggregator;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-20上午10:00:03
  */
 public class CustomLineAggregator<T> extends ExtractorLineAggregator<T> {

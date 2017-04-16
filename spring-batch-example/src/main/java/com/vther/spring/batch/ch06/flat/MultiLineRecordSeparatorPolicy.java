@@ -1,12 +1,10 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch06.flat;
 
 import org.springframework.batch.item.file.separator.RecordSeparatorPolicy;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-4-5下午10:01:21
  */
 public class MultiLineRecordSeparatorPolicy implements RecordSeparatorPolicy {
@@ -49,13 +47,13 @@ public class MultiLineRecordSeparatorPolicy implements RecordSeparatorPolicy {
 		return delimiter;
 	}
 
-	public int getCount() {
-		return count;
-	}
-
 	public void setDelimiter(String delimiter) {
 		this.delimiter = delimiter;
 	}
+
+    public int getCount() {
+        return count;
+    }
 
 	public void setCount(int count) {
 		this.count = count;

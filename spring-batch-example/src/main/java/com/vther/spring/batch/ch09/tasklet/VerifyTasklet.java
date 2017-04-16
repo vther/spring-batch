@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch09.tasklet;
 
 import com.vther.spring.batch.ch09.Constant;
@@ -11,7 +9,7 @@ import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.repeat.RepeatStatus;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-7上午10:20:31
  */
 public class VerifyTasklet implements Tasklet {

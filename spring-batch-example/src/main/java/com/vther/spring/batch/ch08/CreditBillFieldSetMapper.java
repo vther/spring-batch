@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch08;
 
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
@@ -8,8 +6,8 @@ import org.springframework.batch.item.file.transform.FieldSet;
 import org.springframework.validation.BindException;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-9-19下午01:13:17
  */
 public class CreditBillFieldSetMapper implements FieldSetMapper<CreditBill> {

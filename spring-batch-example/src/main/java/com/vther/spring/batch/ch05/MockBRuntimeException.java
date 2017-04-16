@@ -1,10 +1,8 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch05;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-3-25下午10:28:35
  */
 public class MockBRuntimeException extends RuntimeException {

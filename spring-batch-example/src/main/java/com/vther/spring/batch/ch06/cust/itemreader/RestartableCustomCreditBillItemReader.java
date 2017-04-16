@@ -1,29 +1,20 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch06.cust.itemreader;
+
+import com.vther.spring.batch.ch06.CreditBill;
+import org.springframework.batch.item.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.batch.item.ExecutionContext;
-import org.springframework.batch.item.ItemReader;
-import org.springframework.batch.item.ItemStream;
-import org.springframework.batch.item.ItemStreamException;
-import org.springframework.batch.item.NonTransientResourceException;
-import org.springframework.batch.item.ParseException;
-import org.springframework.batch.item.UnexpectedInputException;
-
-import com.vther.spring.batch.ch06.CreditBill;
-
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-7下午02:16:52
  */
 public class RestartableCustomCreditBillItemReader implements ItemReader<CreditBill>,ItemStream{
-	private List<CreditBill> list = new ArrayList<CreditBill>();
-	private int currentLocation = 0;
-	private static final String CURRENT_LOCATION = "current.location";
+    private static final String CURRENT_LOCATION = "current.location";
+    private List<CreditBill> list = new ArrayList<CreditBill>();
+    private int currentLocation = 0;
 	
 	public RestartableCustomCreditBillItemReader(List<CreditBill> list){
 		this.list = list;

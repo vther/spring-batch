@@ -1,21 +1,18 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch06.reuse;
+
+import com.vther.spring.batch.ch06.CreditBill;
+import org.springframework.beans.factory.InitializingBean;
 
 import java.util.List;
 
-import org.springframework.beans.factory.InitializingBean;
-
-import com.vther.spring.batch.ch06.CreditBill;
-
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-7下午01:40:07
  */
 public class CreditBillServiceAdapter implements InitializingBean{
-	private ExistService existService;
 	List<CreditBill> creditBillList;
+	private ExistService existService;
 
 	@Override
 	public void afterPropertiesSet() throws Exception {

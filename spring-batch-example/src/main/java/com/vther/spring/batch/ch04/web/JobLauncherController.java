@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package com.vther.spring.batch.ch04.web;
 
 import org.springframework.batch.core.JobParameters;
@@ -16,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  *         2013-3-20下午09:18:12
  */
 @Controller

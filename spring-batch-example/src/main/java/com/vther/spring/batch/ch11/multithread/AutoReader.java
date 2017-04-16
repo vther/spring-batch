@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch11.multithread;
 
 import org.springframework.batch.item.ItemReader;
@@ -9,8 +7,8 @@ import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-11-16下午10:58:12
  */
 public class AutoReader implements ItemReader<String> {

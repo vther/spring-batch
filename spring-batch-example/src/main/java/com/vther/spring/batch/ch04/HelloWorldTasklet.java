@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package com.vther.spring.batch.ch04;
 
 import org.springframework.batch.core.JobParameter;
@@ -13,7 +11,7 @@ import org.springframework.batch.repeat.RepeatStatus;
 import java.util.Map;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  *         2013-3-19下午03:56:36
  */
 public class HelloWorldTasklet implements Tasklet {

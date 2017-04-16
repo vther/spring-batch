@@ -1,19 +1,16 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch07.cust.itemwriter;
 
-import java.util.List;
-
+import com.vther.spring.batch.ch07.CreditBill;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.support.transaction.TransactionAwareProxyFactory;
 
-import com.vther.spring.batch.ch07.CreditBill;
+import java.util.List;
 
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-9-29下午12:18:47
  */
 public class CustomCreditBillItemWriter implements ItemWriter<CreditBill> {

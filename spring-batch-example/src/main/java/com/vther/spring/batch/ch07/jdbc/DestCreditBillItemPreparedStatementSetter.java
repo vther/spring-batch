@@ -1,16 +1,14 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch07.jdbc;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+package com.vther.spring.batch.ch07.jdbc;
 
 import com.vther.spring.batch.ch07.db.DestinationCreditBill;
 import org.springframework.batch.item.database.ItemPreparedStatementSetter;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-23下午10:33:20
  */
 public class DestCreditBillItemPreparedStatementSetter implements

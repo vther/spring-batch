@@ -1,9 +1,5 @@
-/**
- * 
- */
-package test.com.juxtapose.example.ch06;
 
-import java.util.Date;
+package test.com.juxtapose.example.ch06;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
@@ -12,9 +8,11 @@ import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Date;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-2-28下午08:34:48
  */
 public class JobLaunchXML {
@@ -36,12 +34,10 @@ public class JobLaunchXML {
 			e.printStackTrace();
 		}
 	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		executeJob("ch06/job/job-xml.xml", "xmlFileReadAndWriterJob",
+
+
+    public static void main(String[] args) {
+        executeJob("ch06/job/job-xml.xml", "xmlFileReadAndWriterJob",
 				new JobParametersBuilder().addDate("date", new Date())
 					.addString("inputFilePath", "ch06/data/xml/credit-card-bill-201303.xml")
 					.addString("outputFilePath", "target/ch06/xml/credit-card-bill.xml"));

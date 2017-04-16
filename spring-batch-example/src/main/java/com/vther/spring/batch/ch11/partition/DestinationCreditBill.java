@@ -1,13 +1,11 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch11.partition;
 
 import java.io.Serializable;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2014-1-11下午02:37:55
  */
 public class DestinationCreditBill implements Serializable{

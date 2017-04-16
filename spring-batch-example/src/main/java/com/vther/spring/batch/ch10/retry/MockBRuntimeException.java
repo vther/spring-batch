@@ -1,11 +1,9 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch10.retry;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-10-21下午10:09:41
  */
 public class MockBRuntimeException extends RuntimeException {

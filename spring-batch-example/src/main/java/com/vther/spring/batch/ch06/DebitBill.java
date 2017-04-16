@@ -1,11 +1,9 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch06;
 
 /**
  * 借贷卡对账单模型.<br>
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-4-6上午05:56:02
  */
 public class DebitBill {

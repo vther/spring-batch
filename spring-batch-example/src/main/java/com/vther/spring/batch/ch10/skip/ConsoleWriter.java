@@ -1,15 +1,13 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch10.skip;
 
-import java.util.List;
+package com.vther.spring.batch.ch10.skip;
 
 import org.springframework.batch.item.ItemWriter;
 
+import java.util.List;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-10-20下午10:06:38
  */
 public class ConsoleWriter implements ItemWriter<String> {

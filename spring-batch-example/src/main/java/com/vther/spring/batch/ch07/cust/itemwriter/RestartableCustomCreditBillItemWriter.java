@@ -1,10 +1,5 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch07.cust.itemwriter;
 
-import java.util.ArrayList;
-import java.util.List;
+package com.vther.spring.batch.ch07.cust.itemwriter;
 
 import com.vther.spring.batch.ch07.CreditBill;
 import org.springframework.batch.item.ExecutionContext;
@@ -12,16 +7,19 @@ import org.springframework.batch.item.ItemStream;
 import org.springframework.batch.item.ItemStreamException;
 import org.springframework.batch.item.ItemWriter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-9-29下午12:18:47
  */
 public class RestartableCustomCreditBillItemWriter implements ItemWriter<CreditBill>, ItemStream {
-	private List<CreditBill> result = new ArrayList<CreditBill>();
-	private int currentLocation = 0;
-	private static final String CURRENT_LOCATION = "current.location";
+    private static final String CURRENT_LOCATION = "current.location";
+    private List<CreditBill> result = new ArrayList<CreditBill>();
+    private int currentLocation = 0;
 	
 	@Override
 	public void write(List<? extends CreditBill> items) throws Exception {

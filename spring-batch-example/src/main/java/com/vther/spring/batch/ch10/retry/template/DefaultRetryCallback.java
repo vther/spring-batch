@@ -1,14 +1,12 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch10.retry.template;
 
 import org.springframework.retry.RetryCallback;
 import org.springframework.retry.RetryContext;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-10-21下午11:00:27
  */
 public class DefaultRetryCallback implements RetryCallback<String> {

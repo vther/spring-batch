@@ -1,14 +1,14 @@
 package com.vther.spring.batch.ch06.flat;
 
-import java.io.IOException;
-import java.io.Writer;
-
 import org.springframework.batch.item.file.FlatFileHeaderCallback;
 import org.springframework.batch.item.file.LineCallbackHandler;
 
+import java.io.IOException;
+import java.io.Writer;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-4-3下午08:01:45
  */
 public class CopyHeaderLineCallbackHandler implements LineCallbackHandler,

@@ -1,23 +1,20 @@
-/**
- * 
- */
+
 package test.com.juxtapose.example.ch06;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.vther.spring.batch.ch06.CreditBill;
+import com.vther.spring.batch.ch06.cust.itemreader.CustomCreditBillItemReader;
+import com.vther.spring.batch.ch06.cust.itemreader.RestartableCustomCreditBillItemReader;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemStream;
 
-import com.vther.spring.batch.ch06.CreditBill;
-import com.vther.spring.batch.ch06.cust.itemreader.CustomCreditBillItemReader;
-import com.vther.spring.batch.ch06.cust.itemreader.RestartableCustomCreditBillItemReader;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-9-7下午03:03:44
  */
 public class JobLaunchCustomItemReaderTest {

@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch11.multithread;
 
 import org.springframework.batch.item.ExecutionContext;
@@ -9,7 +7,7 @@ import org.springframework.batch.item.ItemStream;
 import org.springframework.batch.item.ItemStreamException;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-11-17上午08:19:50
  */
 public class SynchronizedItemReader implements ItemReader<CreditBill>, ItemStream{

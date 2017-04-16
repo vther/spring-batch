@@ -1,15 +1,13 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch05;
 
-import java.util.Random;
+package com.vther.spring.batch.ch05;
 
 import org.springframework.batch.item.ItemProcessor;
 
+import java.util.Random;
+
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-3-25上午05:16:21
  */
 public class AlwaysExceptionItemProcessor implements ItemProcessor<String, String> {

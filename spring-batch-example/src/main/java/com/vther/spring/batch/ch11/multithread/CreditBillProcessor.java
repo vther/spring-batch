@@ -1,16 +1,14 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch11.multithread;
 
-import java.util.UUID;
+package com.vther.spring.batch.ch11.multithread;
 
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import java.util.UUID;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-11-17上午07:36:36
  */
 public class CreditBillProcessor implements

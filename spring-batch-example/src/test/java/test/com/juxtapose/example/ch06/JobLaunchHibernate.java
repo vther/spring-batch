@@ -1,9 +1,5 @@
-/**
- * 
- */
-package test.com.juxtapose.example.ch06;
 
-import java.util.Date;
+package test.com.juxtapose.example.ch06;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
@@ -12,9 +8,11 @@ import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Date;
+
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-8-17上午07:59:17
  */
 public class JobLaunchHibernate {
@@ -36,12 +34,10 @@ public class JobLaunchHibernate {
 			e.printStackTrace();
 		}
 	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		executeJob("ch06/job/job-db-hibernate.xml", "hibernateReadJob",
+
+
+    public static void main(String[] args) {
+        executeJob("ch06/job/job-db-hibernate.xml", "hibernateReadJob",
 				new JobParametersBuilder().addDate("date", new Date()).addString("begin", "1").addString("end", "4"));
 	}
 }

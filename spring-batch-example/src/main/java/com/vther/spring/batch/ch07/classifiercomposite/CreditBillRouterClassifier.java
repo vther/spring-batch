@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch07.classifiercomposite;
 
 
@@ -8,7 +6,7 @@ import com.vther.spring.batch.ch07.CreditBill;
 import org.springframework.classify.annotation.Classifier;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-23上午08:25:06
  */
 public class CreditBillRouterClassifier{

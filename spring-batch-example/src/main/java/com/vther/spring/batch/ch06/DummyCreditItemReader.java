@@ -1,18 +1,16 @@
-/**
- * 
- */
-package com.vther.spring.batch.ch06;
 
-import java.util.ArrayList;
-import java.util.List;
+package com.vther.spring.batch.ch06;
 
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.NonTransientResourceException;
 import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-7下午02:12:56
  */
 public class DummyCreditItemReader implements ItemReader<CreditBill> {

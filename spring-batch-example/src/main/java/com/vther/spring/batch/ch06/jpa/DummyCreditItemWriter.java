@@ -1,16 +1,14 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch06.jpa;
+
+import org.springframework.batch.item.ItemWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.batch.item.ItemWriter;
-
 /**
- * 
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
+ *
  * 2013-9-1上午09:04:55
  */
 public class DummyCreditItemWriter implements ItemWriter<CreditBill> {

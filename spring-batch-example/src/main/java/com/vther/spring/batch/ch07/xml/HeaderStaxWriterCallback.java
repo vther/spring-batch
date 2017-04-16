@@ -1,18 +1,15 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch07.xml;
 
-import java.io.IOException;
+import org.springframework.batch.item.xml.StaxWriterCallback;
 
 import javax.xml.stream.XMLEventFactory;
 import javax.xml.stream.XMLEventWriter;
 import javax.xml.stream.XMLStreamException;
-
-import org.springframework.batch.item.xml.StaxWriterCallback;
+import java.io.IOException;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-9-21下午03:47:06
  */
 public class HeaderStaxWriterCallback implements StaxWriterCallback {

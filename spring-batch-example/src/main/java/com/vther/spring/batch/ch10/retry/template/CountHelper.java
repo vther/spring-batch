@@ -1,12 +1,10 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch10.retry.template;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-22下午10:58:15
  */
 public class CountHelper {

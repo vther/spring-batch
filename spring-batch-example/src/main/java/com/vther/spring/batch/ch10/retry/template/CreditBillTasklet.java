@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch10.retry.template;
 
 import org.springframework.batch.core.StepContribution;
@@ -13,7 +11,7 @@ import org.springframework.retry.policy.SimpleRetryPolicy;
 import org.springframework.retry.support.RetryTemplate;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-10-22下午08:44:02
  */
 public class CreditBillTasklet implements Tasklet {

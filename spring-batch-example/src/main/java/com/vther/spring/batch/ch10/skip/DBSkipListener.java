@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch10.skip;
 
 import org.springframework.batch.core.SkipListener;
@@ -8,7 +6,7 @@ import org.springframework.batch.item.file.FlatFileParseException;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-3-29上午08:02:00
  */
 public class DBSkipListener implements SkipListener<String, String> {

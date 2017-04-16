@@ -1,11 +1,9 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch05;
 
 /**
  * 信用卡对账单模型.<br>
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2013-1-6下午09:56:02
  */
 public class CreditBill {

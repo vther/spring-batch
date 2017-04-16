@@ -1,12 +1,10 @@
-/**
- * 
- */
+
 package com.vther.spring.batch.ch05.step.listener;
 
 import org.springframework.batch.core.ItemProcessListener;
 
 /**
- * @author bruce.liu(mailto:jxta.liu@gmail.com)
+ *
  * 2012-9-1上午08:08:21
  */
 public class SystemOutItemProcessListener implements ItemProcessListener<String, String> {
