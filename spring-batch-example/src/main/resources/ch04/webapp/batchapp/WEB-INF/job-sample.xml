@@ -15,6 +15,6 @@
         </step>
     </job>
 
-    <bean:bean id="reader" class="com.juxtapose.example.ch04.stop.AutoReader"/>
-    <bean:bean id="writer" class="com.juxtapose.example.ch04.stop.ConsoleWriter"/>
+    <bean:bean id="reader" class="com.vther.spring.batch.ch04.stop.AutoReader"/>
+    <bean:bean id="writer" class="com.vther.spring.batch.ch04.stop.ConsoleWriter"/>
 </bean:beans>

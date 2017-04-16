@@ -3,7 +3,7 @@
  */
 package test.com.juxtapose.example.ch04;
 
-import com.juxtapose.example.ch04.stop.StopStepListener;
+import com.vther.spring.batch.ch04.stop.StopStepListener;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParametersBuilder;
 import org.springframework.batch.core.launch.JobLauncher;

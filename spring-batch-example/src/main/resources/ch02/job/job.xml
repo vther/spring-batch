@@ -68,6 +68,6 @@
         </bean:property>
     </bean:bean>
 
-    <bean:bean id="creditBill" scope="prototype" class="com.juxtapose.example.ch02.CreditBill"/>
-    <bean:bean id="creditBillProcessor" scope="step" class="com.juxtapose.example.ch02.CreditBillProcessor"/>
+    <bean:bean id="creditBill" scope="prototype" class="com.vther.spring.batch.ch02.CreditBill"/>
+    <bean:bean id="creditBillProcessor" scope="step" class="com.vther.spring.batch.ch02.CreditBillProcessor"/>
 </bean:beans>

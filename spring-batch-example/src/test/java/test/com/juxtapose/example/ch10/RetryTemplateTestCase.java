@@ -17,11 +17,11 @@ import org.springframework.retry.policy.TimeoutRetryPolicy;
 import org.springframework.retry.support.DefaultRetryState;
 import org.springframework.retry.support.RetryTemplate;
 
-import com.juxtapose.example.ch10.retry.template.CountHelper;
-import com.juxtapose.example.ch10.retry.template.CountRetryListener;
-import com.juxtapose.example.ch10.retry.template.DefaultBackoffPolicy;
-import com.juxtapose.example.ch10.retry.template.DefaultRecoveryCallback;
-import com.juxtapose.example.ch10.retry.template.DefaultRetryCallback;
+import com.vther.spring.batch.ch10.retry.template.CountHelper;
+import com.vther.spring.batch.ch10.retry.template.CountRetryListener;
+import com.vther.spring.batch.ch10.retry.template.DefaultBackoffPolicy;
+import com.vther.spring.batch.ch10.retry.template.DefaultRecoveryCallback;
+import com.vther.spring.batch.ch10.retry.template.DefaultRetryCallback;
 
 /**
  * 

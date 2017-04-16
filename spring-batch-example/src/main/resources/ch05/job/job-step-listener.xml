@@ -99,27 +99,27 @@
 
 
     <bean:bean id="jobExecutionListener"
-               class="com.juxtapose.example.ch05.step.listener.SystemOutJobExecutionListener"/>
+               class="com.vther.spring.batch.ch05.step.listener.SystemOutJobExecutionListener"/>
     <bean:bean id="stepExecutionListener"
-               class="com.juxtapose.example.ch05.step.listener.SystemOutStepExecutionListener"/>
-    <bean:bean id="chunkListener" class="com.juxtapose.example.ch05.step.listener.SystemOutChunkListener"/>
-    <bean:bean id="itemReadListener" class="com.juxtapose.example.ch05.step.listener.SystemOutItemReadListener"/>
-    <bean:bean id="itemProcessListener" class="com.juxtapose.example.ch05.step.listener.SystemOutItemProcessListener"/>
-    <bean:bean id="itemWriteListener" class="com.juxtapose.example.ch05.step.listener.SystemOutItemWriteListener"/>
-    <bean:bean id="retryListener" class="com.juxtapose.example.ch05.step.listener.SystemOutRetryListener"/>
-    <bean:bean id="skipListener" class="com.juxtapose.example.ch05.step.listener.SystemOutSkipListener"/>
-    <bean:bean id="dbSkipListener" class="com.juxtapose.example.ch05.step.listener.DBSkipListener">
+               class="com.vther.spring.batch.ch05.step.listener.SystemOutStepExecutionListener"/>
+    <bean:bean id="chunkListener" class="com.vther.spring.batch.ch05.step.listener.SystemOutChunkListener"/>
+    <bean:bean id="itemReadListener" class="com.vther.spring.batch.ch05.step.listener.SystemOutItemReadListener"/>
+    <bean:bean id="itemProcessListener" class="com.vther.spring.batch.ch05.step.listener.SystemOutItemProcessListener"/>
+    <bean:bean id="itemWriteListener" class="com.vther.spring.batch.ch05.step.listener.SystemOutItemWriteListener"/>
+    <bean:bean id="retryListener" class="com.vther.spring.batch.ch05.step.listener.SystemOutRetryListener"/>
+    <bean:bean id="skipListener" class="com.vther.spring.batch.ch05.step.listener.SystemOutSkipListener"/>
+    <bean:bean id="dbSkipListener" class="com.vther.spring.batch.ch05.step.listener.DBSkipListener">
         <bean:property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean:bean>
 
-    <bean:bean id="reader20" class="com.juxtapose.example.ch05.AutoReader">
+    <bean:bean id="reader20" class="com.vther.spring.batch.ch05.AutoReader">
         <bean:property name="maxCount" value="0"/>
     </bean:bean>
-    <bean:bean id="reader" class="com.juxtapose.example.ch05.AutoReader"/>
-    <bean:bean id="radomExceptionAutoReader" class="com.juxtapose.example.ch05.RadomExceptionAutoReader"/>
+    <bean:bean id="reader" class="com.vther.spring.batch.ch05.AutoReader"/>
+    <bean:bean id="radomExceptionAutoReader" class="com.vther.spring.batch.ch05.RadomExceptionAutoReader"/>
     <bean:bean id="processor" class="org.springframework.batch.item.support.PassThroughItemProcessor"/>
-    <bean:bean id="writer" class="com.juxtapose.example.ch05.ConsoleWriter"/>
-    <bean:bean id="sysoutListener" class="com.juxtapose.example.ch05.listener.SystemOutStepExecutionListener"/>
-    <bean:bean id="sysoutAnnotationListener" class="com.juxtapose.example.ch05.listener.SystemOut"/>
-    <bean:bean id="errorListener" class="com.juxtapose.example.ch05.listener.ErrorStepExecutionListener"/>
+    <bean:bean id="writer" class="com.vther.spring.batch.ch05.ConsoleWriter"/>
+    <bean:bean id="sysoutListener" class="com.vther.spring.batch.ch05.listener.SystemOutStepExecutionListener"/>
+    <bean:bean id="sysoutAnnotationListener" class="com.vther.spring.batch.ch05.listener.SystemOut"/>
+    <bean:bean id="errorListener" class="com.vther.spring.batch.ch05.listener.ErrorStepExecutionListener"/>
 </bean:beans>

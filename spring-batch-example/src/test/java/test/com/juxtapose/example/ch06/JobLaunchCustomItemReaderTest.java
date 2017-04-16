@@ -11,9 +11,9 @@ import org.junit.Test;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemStream;
 
-import com.juxtapose.example.ch06.CreditBill;
-import com.juxtapose.example.ch06.cust.itemreader.CustomCreditBillItemReader;
-import com.juxtapose.example.ch06.cust.itemreader.RestartableCustomCreditBillItemReader;
+import com.vther.spring.batch.ch06.CreditBill;
+import com.vther.spring.batch.ch06.cust.itemreader.CustomCreditBillItemReader;
+import com.vther.spring.batch.ch06.cust.itemreader.RestartableCustomCreditBillItemReader;
 
 /**
  * 

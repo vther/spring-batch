@@ -19,7 +19,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 
-import com.juxtapose.example.ch06.CreditBill;
+import com.vther.spring.batch.ch06.CreditBill;
 
 
 /**
