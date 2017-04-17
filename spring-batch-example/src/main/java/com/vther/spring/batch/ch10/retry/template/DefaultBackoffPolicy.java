@@ -1,4 +1,3 @@
-
 package com.vther.spring.batch.ch10.retry.template;
 
 import org.junit.Assert;
@@ -8,8 +7,7 @@ import org.springframework.retry.backoff.BackOffInterruptedException;
 import org.springframework.retry.backoff.BackOffPolicy;
 
 /**
- *
- *         2013-10-21下午10:59:56
+ * 2013-10-21下午10:59:56
  */
 public class DefaultBackoffPolicy implements BackOffPolicy {
 
