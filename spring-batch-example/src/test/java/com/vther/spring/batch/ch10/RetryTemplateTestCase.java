@@ -33,7 +33,7 @@ public class RetryTemplateTestCase {
     public void testSimpleRetry() {
         RetryCallback<String> retryCallback = new DefaultRetryCallback();
         SimpleRetryPolicy retryPolicy = new SimpleRetryPolicy();
-        retryPolicy.setMaxAttempts(3);
+        retryPolicy.setMaxAttempts(5);
         RetryListener[] listeners = new RetryListener[]{new CountRetryListener()};
         RetryTemplate template = new RetryTemplate();
         template.setRetryPolicy(retryPolicy);
@@ -42,8 +42,8 @@ public class RetryTemplateTestCase {
             template.execute(retryCallback);
             Assert.assertFalse(true);
         } catch (Exception e) {
-            Assert.assertTrue(true);
-            Assert.assertEquals(3, CountHelper.getCount());
+            Assert.assertTrue(true);//这行代码一直无法执行
+            Assert.assertEquals(5, CountHelper.getCount());
         }
     }
 
@@ -58,20 +58,21 @@ public class RetryTemplateTestCase {
         template.setListeners(listeners);
         try {
             template.execute(retryCallback);
-            Assert.assertFalse(true);
+            Assert.assertFalse(true);//这行代码一直无法执行
         } catch (Exception e) {
             Assert.assertTrue(true);
             Assert.assertEquals(3, CountHelper.getCount());
         }
     }
 
+    // BackOffPolicy 会在每次重试结束后执行backOff方法
     @Test
-    public void testBackoffPolicy() {
+    public void testBackOffPolicy() {
         RetryCallback<String> retryCallback = new DefaultRetryCallback();
         SimpleRetryPolicy retryPolicy = new SimpleRetryPolicy();
         retryPolicy.setMaxAttempts(3);
         RetryListener[] listeners = new RetryListener[]{new CountRetryListener()};
-        BackOffPolicy backOffPolicy = new DefaultBackoffPolicy();
+        BackOffPolicy backOffPolicy = new DefaultBackOffPolicy();
         RetryTemplate template = new RetryTemplate();
         template.setRetryPolicy(retryPolicy);
         template.setListeners(listeners);
@@ -85,6 +86,7 @@ public class RetryTemplateTestCase {
         }
     }
 
+    // RecoveryCallback 只会在所有重试结束后执行一次recover方法
     @Test
     public void testRecoveryCallback() {
         RetryCallback<String> retryCallback = new DefaultRetryCallback();
@@ -110,7 +112,7 @@ public class RetryTemplateTestCase {
         SimpleRetryPolicy retryPolicy = new SimpleRetryPolicy();
         retryPolicy.setMaxAttempts(3);
         RetryListener[] listeners = new RetryListener[]{new CountRetryListener()};
-        BackOffPolicy backOffPolicy = new DefaultBackoffPolicy();
+        BackOffPolicy backOffPolicy = new DefaultBackOffPolicy();
         RetryTemplate template = new RetryTemplate();
         template.setRetryPolicy(retryPolicy);
         template.setListeners(listeners);

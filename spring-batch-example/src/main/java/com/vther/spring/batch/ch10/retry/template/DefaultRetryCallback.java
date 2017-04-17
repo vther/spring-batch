@@ -16,7 +16,9 @@ public class DefaultRetryCallback implements RetryCallback<String> {
         this.sleepTime = sleepTime;
     }
 
+    @Override
     public String doWithRetry(RetryContext context) throws Exception {
+        System.out.println("DefaultRetryCallback.doWithRetry()");
         Integer count = (Integer) context.getAttribute("count");
         if (count == null) {
             count = 0;
@@ -25,5 +27,6 @@ public class DefaultRetryCallback implements RetryCallback<String> {
         context.setAttribute("count", count);
         Thread.sleep(sleepTime);
         throw new RuntimeException("Mock make exception on business logic.");
+        //return "Success";
     }
 }

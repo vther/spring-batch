@@ -48,7 +48,7 @@ public class RetryTemplateExample {
         RetryCallback<String> retryCallback = new DefaultRetryCallback();
         TimeoutRetryPolicy retryPolicy = new TimeoutRetryPolicy();
         retryPolicy.setTimeout(3000L);
-        BackOffPolicy backOffPolicy = new DefaultBackoffPolicy();
+        BackOffPolicy backOffPolicy = new DefaultBackOffPolicy();
         RecoveryCallback<String> recoveryCallback = new DefaultRecoveryCallback<String>();
         retry(retryCallback, retryPolicy, recoveryCallback, backOffPolicy);
     }
@@ -67,9 +67,9 @@ public class RetryTemplateExample {
     }
 
     public static void main(String[] args) {
-//		retryTimeout();
-//		retrySimpleRetry();
-//		retrySimpleRetryAndRecovery();
+		//retryTimeout();
+		//retrySimpleRetry();
+		//retrySimpleRetryAndRecovery();
         retryTimeoutAndRecoveryAndBackOff();
     }
 }
