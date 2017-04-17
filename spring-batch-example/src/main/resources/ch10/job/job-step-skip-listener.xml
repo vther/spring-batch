@@ -26,7 +26,6 @@
         </step>
     </job>
 
-
     <bean:bean id="dbSkipListener" class="com.vther.spring.batch.ch10.skip.DBSkipListener">
         <bean:property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean:bean>

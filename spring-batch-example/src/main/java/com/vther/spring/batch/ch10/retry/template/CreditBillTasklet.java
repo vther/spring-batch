@@ -18,8 +18,7 @@ public class CreditBillTasklet implements Tasklet {
      * @see org.springframework.batch.core.step.tasklet.Tasklet#execute(org.springframework.batch.core.StepContribution, org.springframework.batch.core.scope.context.ChunkContext)
      */
     @Override
-    public RepeatStatus execute(StepContribution contribution,
-                                ChunkContext chunkContext) throws Exception {
+    public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
         RetryCallback<String> retryCallback = new DefaultRetryCallback();
         RetryListener[] listeners = new RetryListener[]{new CountRetryListener()};
         SimpleRetryPolicy retryPolicy = new SimpleRetryPolicy();
