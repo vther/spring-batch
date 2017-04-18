@@ -1,4 +1,3 @@
-
 package com.vther.spring.batch.ch11.partition.remote;
 
 import org.apache.commons.logging.Log;
@@ -16,52 +15,51 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- *
  * 2014-3-23下午03:36:20
  */
-public class MessageSourcePollerInterceptor extends ChannelInterceptorAdapter implements InitializingBean{
+public class MessageSourcePollerInterceptor extends ChannelInterceptorAdapter implements InitializingBean {
 
-	private static Log logger = LogFactory.getLog(MessageSourcePollerInterceptor.class);
+    private static Log logger = LogFactory.getLog(MessageSourcePollerInterceptor.class);
 
-	private MessageSource<?> source;
+    private MessageSource<?> source;
 
-	private MessageChannel channel;
+    private MessageChannel channel;
 
-	public MessageSourcePollerInterceptor() {
-	}
+    public MessageSourcePollerInterceptor() {
+    }
 
-	public MessageSourcePollerInterceptor(MessageSource<?> source) {
-		this.source = source;
-	}
+    public MessageSourcePollerInterceptor(MessageSource<?> source) {
+        this.source = source;
+    }
 
-	public void setChannel(MessageChannel channel) {
-		this.channel = channel;
-	}
+    public void setChannel(MessageChannel channel) {
+        this.channel = channel;
+    }
 
-	public void afterPropertiesSet() throws Exception {
-		Assert.state(source != null, "A MessageSource must be provided");
-	}
+    public void afterPropertiesSet() throws Exception {
+        Assert.state(source != null, "A MessageSource must be provided");
+    }
 
-	public void setMessageSource(MessageSource<?> source) {
-		this.source = source;
-	}
+    public void setMessageSource(MessageSource<?> source) {
+        this.source = source;
+    }
 
-	@Override
-	public boolean preReceive(MessageChannel channel) {
-		Message<?> message = source.receive();
-		Collection<StepExecution> collections = new ArrayList<StepExecution>();
-		while(message != null){
-			collections.add((StepExecution)message.getPayload());
-			message = source.receive();
-		}
-		if (this.channel != null) {
-			channel = this.channel;
-		}
-		channel.send(MessageBuilder.withPayload(collections).build());
-		if (logger.isDebugEnabled()) {
-			logger.debug("Sent " + message + " to channel " + channel);
-		}
-		return true;
-	}
+    @Override
+    public boolean preReceive(MessageChannel channel) {
+        Message<?> message = source.receive();
+        Collection<StepExecution> collections = new ArrayList<StepExecution>();
+        while (message != null) {
+            collections.add((StepExecution) message.getPayload());
+            message = source.receive();
+        }
+        if (this.channel != null) {
+            channel = this.channel;
+        }
+        channel.send(MessageBuilder.withPayload(collections).build());
+        if (logger.isDebugEnabled()) {
+            logger.debug("Sent " + message + " to channel " + channel);
+        }
+        return true;
+    }
 
 }

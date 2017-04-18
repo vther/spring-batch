@@ -3,15 +3,9 @@ package com.vther.spring.batch.ch11.multithread;
 
 import java.io.Serializable;
 
-/**
- *
- *
- * 2013-11-17上午07:36:44
- */
+
 public class DestinationCreditBill implements Serializable{
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 5253572139260172440L;
 	private String id;
 	private String accountID = "";	/** 银行卡账户ID */
@@ -69,9 +63,7 @@ public class DestinationCreditBill implements Serializable{
 		this.id = id;
 	}
 
-	/**
-	 * 
-	 */
+
 	public String toString(){
 		StringBuffer sb = new StringBuffer();
 		sb.append("accountID=" + getAccountID() + ";name=" + getName() + ";amount="

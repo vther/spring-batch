@@ -65,7 +65,8 @@ public class RetryTemplateTestCase {
         }
     }
 
-    // BackOffPolicy 会在每次重试结束后执行backOff方法
+    // BackOffPolicy 会在每次重试结束后执行backOff方法,经过测试发现最后一次重试失败不会执行
+    //  ----- !! 原因是补偿策略只有在异常被抛出之前执行，最后一次重试导致了失败，所以补偿策略没有被触发
     @Test
     public void testBackOffPolicy() {
         RetryCallback<String> retryCallback = new DefaultRetryCallback();
@@ -86,7 +87,7 @@ public class RetryTemplateTestCase {
         }
     }
 
-    // RecoveryCallback 只会在所有重试结束后执行一次recover方法
+    // RecoveryCallback 只会在所有重试结束后执行一次recover方法,通常用在有状态的重试中
     @Test
     public void testRecoveryCallback() {
         RetryCallback<String> retryCallback = new DefaultRetryCallback();
@@ -100,7 +101,7 @@ public class RetryTemplateTestCase {
         try {
             template.execute(retryCallback, recoveryCallback);
             Assert.assertTrue(true);
-            Assert.assertEquals(2, CountHelper.getCount());
+            Assert.assertEquals(0, CountHelper.getCount());
         } catch (Exception e) {
             Assert.assertTrue(false);
         }
@@ -117,12 +118,14 @@ public class RetryTemplateTestCase {
         template.setRetryPolicy(retryPolicy);
         template.setListeners(listeners);
         template.setBackOffPolicy(backOffPolicy);
-        @SuppressWarnings({"unchecked", "rawtypes"})
+        //FALSE 表示发生任何异常都不会RollBack，TRUE表示发生异常就会停止
+        @SuppressWarnings("unchecked")
         Classifier<? super Throwable, Boolean> classifier = new ClassifierSupport(Boolean.FALSE);
+        // TODO 查资料表示true会每次都刷新RetryContext，false表示沿用上次的，但是不明白什么含义
         RetryState retryState = new DefaultRetryState("key", false, classifier);
         try {
             template.execute(retryCallback, retryState);
-            Assert.assertFalse(true);
+            Assert.assertFalse(true);//这行代码一直无法执行
         } catch (Exception e) {
             Assert.assertTrue(true);
             Assert.assertEquals(1, CountHelper.getCount());

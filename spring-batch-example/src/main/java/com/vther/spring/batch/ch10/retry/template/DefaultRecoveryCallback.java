@@ -10,7 +10,7 @@ public class DefaultRecoveryCallback<T> implements RecoveryCallback<T> {
     @Override
     public T recover(RetryContext context) throws Exception {
         Assert.assertNotNull(context.getAttribute("count"));
-        CountHelper.decrement();
+        CountHelper.init();
         System.out.println("RecoveryCallback.recover(),times=" + CountHelper.getCount());
         return null;
     }

@@ -18,8 +18,9 @@ public class DefaultRetryCallback implements RetryCallback<String> {
 
     @Override
     public String doWithRetry(RetryContext context) throws Exception {
-        System.out.println("DefaultRetryCallback.doWithRetry()");
+        System.out.println("DefaultRetryCallback.doWithRetry()--> count=" + context.getAttribute("count"));
         Integer count = (Integer) context.getAttribute("count");
+
         if (count == null) {
             count = 0;
         }
